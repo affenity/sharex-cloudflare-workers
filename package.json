@@ -17,16 +17,13 @@
   },
   "dependencies": {
     "@cloudflare/workers-types": "^2.2.2",
-    "tslib": "^2.2.0"
+    "@types/uuid": "^8.3.0",
+    "cloudflare-router": "^2.1.1",
+    "tslib": "^2.2.0",
+    "uuid": "^8.3.2"
   },
   "scripts": {
-    "test": "jest",
     "build": "tsc --skipLibCheck",
-    "prepublish": "yarn build",
-    "create-docs": "typedoc --plugin typedoc-plugin-markdown --hideBreadcrumbs --namedAnchors --excludeExternals --out docs src && mkdocs build"
-  },
-  "jest": {
-    "coverageDirectory": "./coverage/",
-    "collectCoverage": true
+    "deploy": "npm run build && wrangler publish"
   }
 }

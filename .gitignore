@@ -1,7 +1,5 @@
 .idea
 dist
 node_modules
-coverage
-docs/
-site/
 wrangler.toml
+worker

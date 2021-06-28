@@ -1,8 +1,9 @@
 name = "sharex-cf-workers"
 type = 'webpack'
 account_id = ''
-route = ''
+route = 'https://DOMAIN.com/*'
 zone_id = ''
 usage_model = ''
-workers_dev = true
+workers_dev = false
 target_type = "webpack"
+kv_namespaces = [{ binding = "IMG_STORE", id = "ID", preview_id = "ID" }]
